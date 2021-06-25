@@ -18,12 +18,12 @@ function setUserName() {
     myHeading.textContent = 'Welcome to Mozilla, ' + myName;
 }
 
-if(!localStorage.getItem('name')) {
-    setUserName();
-}   else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Welcome to Mozilla, ' + storedName
-}
+// if(!localStorage.getItem('name')) {
+//     setUserName();
+// }   else {
+//     let storedName = localStorage.getItem('name');
+//     myHeading.textContent = 'Welcome to Mozilla, ' + storedName
+// }
 
 myButton.onclick = function() {
     setUserName();
